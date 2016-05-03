@@ -27,23 +27,38 @@
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>name=shippingModuleAndMethod[method_code]</td>
-	<td></td>
-</tr>
-<tr>
 	<td>pause</td>
-	<td>1000</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAt</td>
+	<td>//form[@id='checkout_2']/div[5]/div/div[3]/div/div[2]/div/label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>document.checkout_2.elements['shippingModuleAndMethod[method_code]'][1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
 	<td>xpath=(//input[@value='Continue Checkout'])[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>pause</td>
-	<td>1000</td>
+	<td>2000</td>
 	<td></td>
 </tr>
 <tr>
@@ -51,7 +66,6 @@
 	<td>//form[@id='checkout_3']/div[7]/div/ul/li[3]/em</td>
 	<td>Order Total:</td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

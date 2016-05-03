@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://demo.avactis.com/" />
-<title>10 - Bestille varer uten adresse</title>
+<title>Uferdig - 11 - Bestille varer uten forsendelsemetode</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">10 - Bestille varer uten adresse</td></tr>
+<tr><td rowspan="1" colspan="3">Uferdig - 11 - Bestille varer uten forsendelsemetode</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -17,24 +17,9 @@
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>link=Continue Shopping</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>//input[@value='Add To Cart']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>2500</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>link=Checkout</td>
-	<td></td>
+	<td>type</td>
+	<td>id=input_text_req_error_empty_id_1704957715</td>
+	<td>Oslo</td>
 </tr>
 <tr>
 	<td>click</td>
@@ -42,14 +27,24 @@
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>2500</td>
+	<td>click</td>
+	<td>xpath=(//input[@value='Continue Checkout'])[2]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>id=step_1_errors</td>
-	<td>1. Field 'City' in form 'Billing Information' is required.</td>
+	<td>id=step_2_errors</td>
+	<td>1. Please select a delivery method.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#tr_empty_id_1691205511 &gt; label.required</td>
+	<td>exact:City*</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=tr_empty_id_1691205511</td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>
